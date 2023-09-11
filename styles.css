@@ -193,6 +193,7 @@ nav a.hovered::before {
   background-size: contain;
   /*   padding-left: 50%; */
   position: relative;
+  overflow: hidden;
 }
 .text-section {
  max-width: 800px;

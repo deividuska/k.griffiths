@@ -6,9 +6,13 @@ ScrollTrigger.defaults({
 
   gsap.from(".text-section > *", {x: 500, duration: 1.5, opacity: 0, scale: 0.5, stagger: 0.2});
 
-gsap.to(".orange p", {
-    scrollTrigger: ".orange", 
-    
+gsap.from(".business-content > *", {
+    x: -200, 
+    duration: 1.5, 
+    stagger: 0.2,
+    scrollTrigger: {
+        trigger: ".orange",
+} 
   });
 
     // Animation for the red panel (background colour change)
