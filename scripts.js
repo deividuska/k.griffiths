@@ -143,3 +143,15 @@ const hamburger = document.querySelector('.hamburger');
         }
       );
     });
+
+  
+    let linkedIn = document.querySelector('.linkedin');
+    let linkedHover = document.querySelector('.linkedin-hover');
+    linkedHover.addEventListener('mouseover', () => {
+        linkedIn.classList.add('linkedin-rotate');
+
+    });
+    linkedHover.addEventListener('mouseleave', () => {
+        linkedIn.classList.remove('linkedin-rotate');
+
+    });

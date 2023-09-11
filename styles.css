@@ -376,3 +376,11 @@ nav a.hovered::before {
 .panel {
   position: relative;
 }
+
+.linkedin {
+  transition: all 0.3s ease;
+  transform-origin: center center;
+}
+.linkedin-rotate{
+  transform: rotate(20deg);
+}
