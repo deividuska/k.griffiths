@@ -242,6 +242,7 @@ nav a.hovered::before {
   background-position: center left;
   background-size: contain;
   position: relative;
+  overflow: hidden;
 }
 
 @media (max-width: 768px) {

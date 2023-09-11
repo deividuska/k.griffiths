@@ -8,16 +8,15 @@ ScrollTrigger.defaults({
 
 gsap.to(".orange p", {
     scrollTrigger: ".orange", 
+    
   });
 
     // Animation for the red panel (background colour change)
-    gsap.to("#charity", {
-        backgroundColor: "#fdfdfd",
+    gsap.from(".charity", {
+        x: 200,
+        duration: 1,
         scrollTrigger: {
             trigger: "#charity",
-            start: "top center",
-            end: "bottom center",
-            scrub: true
         }
     });
 
