@@ -1,4 +1,6 @@
 
+
+
 ScrollTrigger.defaults({
     toggleActions: "restart pause resume pause",
     scroller: ".container"
@@ -14,6 +16,7 @@ gsap.from(".business-content > *", {
         trigger: ".orange",
 } 
   });
+  gsap.fromTo(".white-overlay", {y:"-100%" }, { y:"0%", delay: 0.3, scrollTrigger: {trigger: ".orange",}});
 
     // Animation for the red panel (background colour change)
     gsap.from(".charity", {
@@ -144,14 +147,29 @@ const hamburger = document.querySelector('.hamburger');
       );
     });
 
+
+    var container = document.querySelector('.container');
+    var header = document.querySelector('header');
+    
+    container.addEventListener('scroll', function() {
+        if (header) {
+            if (container.scrollTop > 0) {
+                header.classList.add('header-scrolled');
+            } else {
+                header.classList.remove('header-scrolled');
+            }
+        }
+    });
+
+
+    // create
+let mm = gsap.matchMedia();
+
+// add a media query. When it matches, the associated function will run
+mm.add("(max-width: 768px)", () => {
+
+    // do something when the viewport is 800px wide or wider
+    gsap.fromTo(".image-section", {opacity:0},{duration: 3, opacity:1, delay:1});
+    
   
-    let linkedIn = document.querySelector('.linkedin');
-    let linkedHover = document.querySelector('.linkedin-hover');
-    linkedHover.addEventListener('mouseover', () => {
-        linkedIn.classList.add('linkedin-rotate');
-
-    });
-    linkedHover.addEventListener('mouseleave', () => {
-        linkedIn.classList.remove('linkedin-rotate');
-
-    });
+});
