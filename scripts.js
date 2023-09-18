@@ -173,3 +173,13 @@ mm.add("(max-width: 768px)", () => {
     
   
 });
+
+let linkedIn = document.querySelector('.linkedin');
+let linkedHover = document.querySelector('.linkedin-hover');
+linkedHover.addEventListener('mouseover', () => {
+    linkedIn.classList.add('linkedin-rotate');
+}); 
+
+linkedHover.addEventListener('mouseout', () => {
+    linkedIn.classList.remove('linkedin-rotate');
+});
