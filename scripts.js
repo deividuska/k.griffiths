@@ -20,7 +20,7 @@ gsap.from(".business-content > *", {
 
     // Animation for the red panel (background colour change)
     gsap.from(".charity", {
-        x: 200,
+        x: 500,
         duration: 1,
         scrollTrigger: {
             trigger: "#charity",

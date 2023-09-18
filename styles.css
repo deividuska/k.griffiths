@@ -211,7 +211,7 @@ nav a.hovered::before {
   }
   .image-section{
     position: absolute;
-    top: 28%;
+    top: 30%;
     right: 1%;
     height: 180px !important;
     width: 180px !important;
@@ -365,6 +365,9 @@ nav a.hovered::before {
     place-content: center;
     justify-items: start;
     background-color: #ffffffe1;
+  }
+  .text-section p{
+    padding: 0px 5px;
   }
 }
 
