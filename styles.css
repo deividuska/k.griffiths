@@ -244,6 +244,16 @@ nav a.hovered::before {
     align-items: end;
     gap: 0.5rem;
 }
+@media (max-width: 768px) {
+  .business-content span{
+    display: grid;
+      grid-template-columns: 1fr;
+      justify-items: start;
+      align-items: end;
+      gap: 0.5rem;
+  }
+}
+
 .business-content span a{
   font-weight: 600;
   color: #000;
